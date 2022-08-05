@@ -14,7 +14,7 @@ int main() {
         print_prompt();
         read_input(input_buffer);
 
-        if (strcpy(input_buffer->buffer, ".exit") == 0) {
+
             if (input_buffer->buffer[0] == '.') {
                 switch (do_meta_command(input_buffer)) {
                     case (META_COMMAND_SUCCESS):
@@ -40,4 +40,3 @@ int main() {
             printf("Executed.\n");
         }
     }
-}

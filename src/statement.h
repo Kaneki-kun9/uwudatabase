@@ -1,5 +1,8 @@
 #pragma once
 #include "inputBuffer.h"
+#include <stdio.h>
+#include <string.h>
+#include "metaCommand.h"
 
 enum StatementType { STATEMENT_INSERT, STATEMENT_SELECT };
 

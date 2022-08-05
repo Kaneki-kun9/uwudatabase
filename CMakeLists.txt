@@ -10,9 +10,9 @@ project(
   uwunetworking 
   VERSION 0.1
   DESCRIPTION
-    "Reimplementing a Networkstack"
+  "Database in C"
   LANGUAGES C)
-add_executable(${PROJECT_NAME} "src/main.c" "src/inputBuffer.c")
+add_executable(${PROJECT_NAME} "src/main.c" "src/inputBuffer.c" "src/metaCommands.c" "src/statement.c")
 
 target_compile_features(${PROJECT_NAME} PRIVATE c_std_11)
 # TODO: Fix for clang/MSVC
