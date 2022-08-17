@@ -25,7 +25,6 @@ int main() {
                 }
             }
 
-	    printf("test");
 
             struct Statement statement;
             switch (prepare_statement(input_buffer, &statement)) {
